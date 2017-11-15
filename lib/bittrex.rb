@@ -64,6 +64,10 @@ module Bittrex
       request("https://bittrex.com/api/#{API_VERSION}/account/getorderhistory", params)
     end
 
+    def balances
+      request("https://bittrex.com/api/#{API_VERSION}/account/getbalance")
+    end
+
     private
 
     def generate_sign(url, params)
