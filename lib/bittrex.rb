@@ -65,7 +65,7 @@ module Bittrex
     end
 
     def balances
-      request("https://bittrex.com/api/#{API_VERSION}/account/getbalance")
+      request("https://bittrex.com/api/#{API_VERSION}/account/getbalances")
     end
 
     private
